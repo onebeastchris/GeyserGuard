@@ -1,0 +1,40 @@
+# GeyserGuard config
+
+# If enabled, only allowed players can join. If disabled, everyone except blocked players can join.
+whitelist-enabled: true
+block-vpn: true
+vpn-block-threshold: 0.95
+
+# Commands
+command-permissions:
+  all-permission: "geyserguard.*"
+  reload-permission: "geyserguard.reload"
+  allow-permission: "geyserguard.allow"
+  block-permission: "geyserguard.block"
+  list-permission: "geyserguard.list"
+
+# Messages
+# You can use Bedrock edition color codes in messages.
+# https://minecraft.gamepedia.com/Formatting_codes#Bedrock_Edition_color_codes
+messages:
+  blocked-ip-message: "Your IP address is blocked from joining this Geyser proxy."
+  blocked-xuid-message: "You cannot join this Geyser proxy."
+  blocked-name-message: "You cannot join this Geyser proxy."
+  blocked-uuid-message: "You cannot join this Geyser proxy."
+  not-allowed-message: "You are not allowed to join this Geyser proxy."
+  vpn-blocked-message: "You are blocked from joining this server."
+
+# Command feedback
+command-feedback:
+  allow-message: "Allowed %xyz% to join the Geyser proxy."
+  block-message: "Blocked %xyz% from joining the Geyser proxy."
+  reload-message: "Reloaded GeyserGuard config."
+  list-message: "Allowed players: %allowed% Blocked players: %blocked%"
+
+# Command descriptions
+command-descriptions:
+  allow-description: "Allows a player to join the Geyser proxy."
+  block-description: "Blocks a player from joining the Geyser proxy."
+  reload-description: "Reloads the GeyserGuard config."
+  list-description: "Lists all allowed and blocked players."
+
